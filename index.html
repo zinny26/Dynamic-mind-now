@@ -1,165 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Dynamic Mind Now | 48-Hour ADHD & Anxiety Evaluations for Students</title>
+  <meta name="description" content="Fast 48-hour ADHD & anxiety telehealth evaluations for school 504/IEP support. Licensed PMHNP in NY, NJ, CT. No waitlists, signed letters delivered within 48 hours." />
+  <meta name="theme-color" content="#003399" />
 
-  <title>Dynamic Mind Now - 48-Hour ADHD & Anxiety Evaluations | NY, NJ, CT</title>
-  <meta name="description" content="48-hour ADHD and anxiety telehealth evaluations with a licensed psychiatric nurse practitioner. Serving parents in New York, New Jersey, and Connecticut. Get a signed school support letter fast.">
-  <meta name="keywords" content="psychiatric nurse practitioner, ADHD evaluation, anxiety treatment, telehealth, mental health, New York, New Jersey, Connecticut, 504 plan, IEP letter, rapid psychiatric evaluation, Dynamic Mind Now">
-  <meta name="author" content="Zinny Ezete, APRN, PMHNP-BC">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#f28c38">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Dynamic Mind Now | 48-Hour ADHD & Anxiety Evaluations">
-  <meta property="og:description" content="Licensed in NY, NJ, and CT. Rapid ADHD and anxiety evaluations with a 48-hour turnaround.">
-  <meta property="og:image" content="YOUR_PHOTO_URL_HERE">
-  <meta property="og:url" content="https://dynamicmindnow.com">
-  <meta property="og:type" content="website">
-
-  <!-- Accessibility & Branding -->
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
-  <meta name="color-scheme" content="light dark">
-  <meta name="format-detection" content="telephone=no">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 
   <style>
-    :root { --accent: #f28c38; --text: #2c3e50; --bg: #ffffff; --light: #f9f9f9; }
+    :root {
+      --royal: #003399;
+      --black: #000;
+      --white: #fff;
+      --gray: #f6f6f6;
+    }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Open Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      font-family: "Open Sans", sans-serif;
+      background: var(--white);
+      color: var(--black);
       line-height: 1.7;
-      padding: 20px;
       max-width: 1200px;
       margin: 0 auto;
     }
-    h1, h2 { font-family: 'Montserrat', sans-serif; font-weight: 700; }
-    h1 { font-size: 2.6rem; text-align: center; margin: 20px 0; color: var(--text); }
-    h2 { font-size: 1.9rem; color: var(--accent); margin: 40px 0 20px; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
 
-    .hero {
-      background: var(--light);
-      padding: 50px 20px;
+    header.hero {
+      background: linear-gradient(to right, var(--royal), #001a66);
+      color: var(--white);
       text-align: center;
-      border-bottom: 6px solid var(--accent);
-      border-radius: 8px;
-      margin-bottom: 30px;
+      padding: 80px 25px 100px;
     }
-    .hero img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
+    header.hero img {
+      width: 150px; height: 150px;
+      border-radius: 50%; object-fit: cover;
+      border: 4px solid var(--white);
       margin-bottom: 20px;
-      border: 4px solid var(--accent);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: 0 auto 25px;
+    header.hero h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.6rem;
+      margin-bottom: 10px;
     }
-    .btn {
+    header.hero p.tagline {
+      font-size: 1.25rem;
+      max-width: 750px;
+      margin: 0 auto 30px;
+      line-height: 1.8;
+    }
+    .cta-btn {
       display: inline-block;
-      background: var(--accent);
-      color: #fff;
-      padding: 16px 32px;
+      background: var(--white);
+      color: var(--royal);
       font-weight: 700;
+      padding: 15px 35px;
+      border-radius: 6px;
+      text-transform: uppercase;
       font-size: 1.1rem;
-      border-radius: 6px;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
     }
-    .btn:hover { background: #e07b2a; }
+    .cta-btn:hover {
+      background: #eaeaea;
+      transform: translateY(-2px);
+    }
 
-    .section {
-      background: var(--light);
-      padding: 25px;
-      margin: 25px 0;
-      border-left: 6px solid var(--accent);
-      border-radius: 6px;
+    section {
+      padding: 60px 25px;
     }
-    .section p { margin-bottom: 12px; }
-    .section ul { padding-left: 20px; margin: 15px 0; }
-    .section ul li { margin-bottom: 8px; }
-    .disclaim { font-size: 0.92rem; }
+    section h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.9rem;
+      color: var(--royal);
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .pain-points {
+      text-align: center;
+      font-size: 1.1rem;
+      max-width: 850px;
+      margin: 0 auto 40px;
+    }
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .package {
+      background: var(--gray);
+      border-top: 6px solid var(--royal);
+      border-radius: 8px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .package h3 {
+      font-family: "Montserrat", sans-serif;
+      color: var(--royal);
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .package ul {
+      list-style: none;
+      text-align: left;
+      margin: 15px 0 20px;
+      padding-left: 0;
+    }
+    .package ul li {
+      margin-bottom: 8px;
+    }
+    .package a {
+      background: var(--royal);
+      color: var(--white);
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .package a:hover {
+      background: #001a66;
+    }
+
+    .why {
+      background: var(--gray);
+      border-left: 6px solid var(--royal);
+      border-radius: 6px;
+      padding: 25px;
+      max-width: 900px;
+      margin: 0 auto 40px;
+    }
+    .why ul { padding-left: 20px; }
+    .why li { margin-bottom: 10px; }
 
     footer {
       text-align: center;
-      margin-top: 50px;
       font-size: 0.9rem;
-      color: #7f8c8d;
-      padding: 20px 0;
+      color: #555;
+      padding: 40px 15px;
+      border-top: 1px solid #ddd;
+      margin-top: 50px;
     }
 
     @media (max-width: 600px) {
-      h1 { font-size: 2rem; }
-      .hero { padding: 30px 15px; }
+      header.hero h1 { font-size: 2rem; }
+      header.hero p.tagline { font-size: 1rem; }
     }
   </style>
 </head>
 
 <body>
-  <div class="hero">
-    <h1>Dynamic Mind Now</h1>
-    <img src="https://ibb.co/SXwbVQH4" alt="Zinny Ezete, Psychiatric Nurse Practitioner, PMHNP-BC">
-    <p>Hello, I’m <strong>Zinny Ezete</strong>, a Board-Certified Psychiatric Mental Health Nurse Practitioner licensed in <strong>New York, New Jersey, and Connecticut</strong>. I provide <strong>rapid 48-hour telehealth evaluations</strong> for ADHD and anxiety, with signed diagnostic letters supporting school-based accommodations. <strong>School districts have the final authority on all 504 and IEP decisions.</strong></p>
-    <p><strong>Stop waiting months. Book your evaluation now.</strong></p>
-    <a href="<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/dynamicmentalhealth/adhd-anxiety-diagnostic-evaluation" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->" class="btn" aria-label="Book Your Slot">Book Your Slot</a>
-  </div>
+  <header class="hero">
+    <img src="/docs/images/profile.jpg" alt="Zinny Ezete, PMHNP-BC" />
+    <h1>48-Hour ADHD & Anxiety Evaluations for Students</h1>
+    <p class="tagline">
+      You don’t have months to wait for answers. Parents need action — not waitlists.  
+      Get your child evaluated within <strong>48 hours</strong> and receive a signed letter ready for school submission.
+    </p>
+    <a href="https://calendly.com/zinny-ezete/adhd-anxiety-evaluation" target="_blank" rel="noopener noreferrer" class="cta-btn">Book Your Evaluation Now</a>
+  </header>
 
-  <h2>Why Choose Dynamic Mental Health Services?</h2>
-  <div class="section">
+  <section>
+    <div class="pain-points">
+      <p>Schools are asking for documentation. Teachers are emailing for clarity. You’re juggling stress, paperwork, and your child’s emotions — all while waiting months for an appointment that should’ve been available yesterday.</p>
+      <p><strong>Dynamic Mind Now</strong> exists to end the waiting. We deliver licensed, professional evaluations in just 48 hours — so you can advocate for your child with confidence and peace of mind.</p>
+    </div>
+
+    <h2>Choose Your Evaluation Package</h2>
+    <div class="packages">
+      <div class="package">
+        <h3>Essential</h3>
+        <div class="price">$750</div>
+        <ul>
+          <li>Comprehensive ADHD or anxiety evaluation</li>
+          <li>Parent/guardian interview</li>
+          <li>Teacher/coach input forms</li>
+          <li>48-hour diagnostic letter for 504/IEP submission</li>
+        </ul>
+        <a href="https://calendly.com/zinny-ezete/adhd-anxiety-evaluation" target="_blank">Select Essential</a>
+      </div>
+
+      <div class="package">
+        <h3>Premium</h3>
+        <div class="price">$1,000</div>
+        <ul>
+          <li>Everything in Essential +</li>
+          <li>Detailed functional report for school team</li>
+          <li>Follow-up recommendations for teachers</li>
+          <li>One 15-minute parent consultation</li>
+        </ul>
+        <a href="https://calendly.com/zinny-ezete/adhd-anxiety-evaluation" target="_blank">Select Premium</a>
+      </div>
+
+      <div class="package">
+        <h3>Comprehensive</h3>
+        <div class="price">$1,500</div>
+        <ul>
+          <li>Everything in Premium +</li>
+          <li>Full written clinical evaluation for records</li>
+          <li>30-minute school meeting support call</li>
+          <li>Includes 2, 30min  follow-up visits for ongoing treatment</li>
+        </ul>
+        <a href="https://calendly.com/zinny-ezete/adhd-anxiety-evaluation" target="_blank">Select Comprehensive</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <h2>Why Parents Choose Dynamic Mental Health</h2>
     <ul>
-      <li><strong>48-hour turnaround:</strong> Evaluation today, signed letter tomorrow—no waiting lists.</li>
-      <li><strong>Cash payment only:</strong> $750–$1,500 (credit cards accepted). Superbill provided for insurance reimbursement.</li>
-      <li><strong>HIPAA-secure:</strong> All video calls and forms encrypted via SimplePractice.</li>
-      <li><strong>Tri-state focus:</strong> Serving families in New York, New Jersey, and Connecticut only.</li>
+      <li><strong>No waitlists — 48-hour turnaround.</strong></li>
+      <li><strong>Licensed expertise.</strong> Zinny Ezete, MSN PMHNP-BC, licensed in NY · NJ · CT.</li>
+      <li><strong>HIPAA-secure telehealth.</strong> Confidential SimplePractice sessions.</li>
+      <li><strong>Documentation schools accept.</strong> Professional diagnostic letters and reports tailored for educators.</li>
+      <li><strong>Clarity and control.</strong> Stop guessing. Get answers and an action plan within 2 days.</li>
     </ul>
-  </div>
-
-  <div class="section disclaim">
-    <h2>Required Disclosures (NY, NJ, CT Compliant)</h2>
-    <p><strong>Payment Policy:</strong> Cash-pay model ensures expedited access. No direct insurance billing. A superbill is provided for you to submit for potential out-of-network reimbursement.</p>
-    <p><strong>Refund Policy:</strong> Full refund for cancellations made 24+ hours in advance. 50% refund for cancellations between 4–24 hours. No refund within 4 hours of the appointment, as your slot is reserved exclusively.</p>
-    <p><strong>Informed Consent:</strong> Booking confirms consent for secure telehealth communication, use of SimplePractice for protected health information, and optional release of a diagnostic school letter. For minors, parental consent and child assent (age 7+) are required. Consent may be withdrawn at any time.</p>
-    <p><strong>School Letters:</strong> Diagnostic letters are issued solely to support school evaluation processes. <strong>This does not guarantee approval of accommodations. All educational determinations are made by the school district or educational team. Dynamic Mental Health Services, LLC d/b/a Dynamic Mind Now and its clinicians bear no responsibility for district outcomes.</strong></p>
-    <p><strong>Emergency Notice:</strong> <strong>Do not use this service for emergencies.</strong> If your child or anyone is in crisis, call <strong>911</strong> or go to the nearest emergency room.</p>
-    <p><strong>Establishment of Care:</strong> Use of this site or initial scheduling does not establish a provider–patient relationship. That relationship begins only after a formal evaluation and signed consent.</p>
-    <p><strong>Privacy:</strong> Read the full <a href="https://docs.google.com/document/d/1dyswHDCC_oKwlojm6OSSX8dUzTzoGnPdlM0SJOn8F_g/edit?usp=sharing">Notice of Privacy Practices</a>. Complaints may be filed with the U.S. Department of Health and Human Services, Office for Civil Rights, or state licensing boards (NY OMH, NJ DCA, CT DPH).</p>
-  </div>
-
-  <div class="section">
-    <h2>Frequently Asked Questions</h2>
-    <p><strong>Q: How fast will I receive the letter?</strong><br>A: Within 48 hours after your evaluation. It will be signed and formatted for school submission. The school has the final authority.</p>
-    <p><strong>Q: How is payment handled?</strong><br>A: Payment is made upfront via cash or credit card. A superbill is provided for optional insurance submission. Refunds follow the policy above.</p>
-    <p><strong>Q: Is this HIPAA-compliant?</strong><br>A: Yes. All sessions and documents are encrypted and handled securely through SimplePractice.</p>
-    <p><strong>Q: Can I use insurance?</strong><br>A: We do not bill insurance directly. You can use the superbill for possible reimbursement from your plan.</p>
-    <p><strong>Q: Do you evaluate minors?</strong><br>A: Yes, with parental consent and child assent if age seven or older. The focus is on school functioning and support needs.</p>
-  </div>
-
-  <div class="section">
-    <h2>HIPAA Policy Summary</h2>
-    <p>Protected health information (PHI) is collected solely for clinical evaluation and documentation purposes. Data is processed via SimplePractice, which maintains a Business Associate Agreement under HIPAA. Information may be disclosed only for treatment, payment, or legal compliance. You have the right to access, amend, or restrict your PHI. In the event of a breach, notification will occur within 60 days. View the full <a href="https://drive.google.com/file/d/1uQcjlPZ7LxIM0SyZWV935Y8GGp2bFa2A/view?usp=sharing">Notice of Privacy Practices</a> or contact contact@mydynamicmind.com.</p>
-  </div>
+  </section>
 
   <footer>
-    <p>Licensed in New York, New Jersey, and Connecticut. Services provided by Zinny Ezete, APRN, PMHNP-BC. This website is for informational purposes only and not a substitute for individualized medical advice. This site is not for psychiatric emergencies or crisis. Please call 911 or go to your nearest Emergency Department for psychiatric emergencies or crisis.</p>
-    <p>&copy; 2025 Dynamic Mental Health Services, LLC. All Rights Reserved. | <a href="https://docs.google.com/document/d/1dyswHDCC_oKwlojm6OSSX8dUzTzoGnPdlM0SJOn8F_g/edit?usp=sharing">Privacy Policy</a> | <a href="/terms.html">Terms of Use</a></p>
+    <p>Licensed in New York, New Jersey, and Connecticut · © 2025 Dynamic Mental Health Services, LLC · All Rights Reserved</p>
+    <p><a href="/docs/privacy.html">Privacy Policy</a> | <a href="/docs/terms.html">Terms of Use</a></p>
   </footer>
 </body>
 </html>
-
