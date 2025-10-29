@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Dynamic Mental Health Services, LLC</title>
+  <meta name="description" content="Privacy Policy for Dynamic Mental Health Services, LLC, telehealth psychiatric evaluations for NY, NJ & CT.">
+  <style>
+    :root { --royal: #003399; --black: #000; --white: #fff; --gray: #f5f5f5; }
+    body { font-family: 'Open Sans', sans-serif; color: var(--black); background: var(--white); line-height: 1.6; max-width: 900px; margin: 40px auto; padding: 20px; }
+    h1, h2 { font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--royal); }
+    h1 { font-size: 2.2rem; margin-bottom: 20px; }
+    h2 { font-size: 1.6rem; margin-top: 30px; margin-bottom: 15px; border-bottom: 2px solid var(--royal); padding-bottom: 6px; }
+    a { color: var(--royal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    p, li { margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 20px; }
+    footer { text-align: center; margin-top: 40px; font-size: 0.9rem; color: #444; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p>Effective Date: October 28, 2025</p>
+  <p><strong>Dynamic Mental Health Services, LLC</strong> (“we,” “our,” or “us”) respects your privacy. This policy explains how we collect, use, disclose, and protect information obtained through this website, in accordance with HIPAA, the FTC, and the state laws of New York, New Jersey, and Connecticut.</p>
+
+  <h2>Information We Collect</h2>
+  <ul>
+    <li>Information you provide directly (such as name, email, phone) when you contact us or schedule a service.</li>
+    <li>Technical information collected automatically via this website (browser type, device, usage data).</li>
+    <li>Protected health information collected through our telehealth platform (SimplePractice), which is handled in accordance with HIPAA and detailed in our <a href="/docs/npp.pdf" target="_blank">Notice of Privacy Practices</a>.</li>
+  </ul>
+
+  <h2>How We Use Information</h2>
+  <ul>
+    <li>To provide, manage, and schedule our telehealth services.</li>
+    <li>To communicate with you about appointments, payments, and relevant updates.</li>
+    <li>To comply with legal and regulatory obligations in New York, New Jersey, and Connecticut.</li>
+  </ul>
+
+  <h2>Cookies & Analytics</h2>
+  <p>We use basic analytics to monitor site traffic and improve user experience. We do not sell, trade, or share personal data with third-parties for marketing without your explicit consent.</p>
+
+  <h2>Your Rights</h2>
+  <p>You may request access to, correction of, or deletion of your information by emailing <a href="mailto:contact@mydynamicmind.com">contact@mydynamicmind.com</a>. Residents of NY, NJ, and CT are protected under respective state laws as well as HIPAA.</p>
+
+  <h2>Contact Us</h2>
+  <p>For privacy-related questions or requests, contact:<br>
+     <strong>Dynamic Mental Health Services, LLC </strong><br>
+     Email: <a href="mailto:contact@mydynamicmind.com">contact@mydynamicmind.com</a>
+  </p>
+
+  <footer>
+    <p><a href="/">Return to Home</a></p>
+  </footer>
+</body>
+</html>
