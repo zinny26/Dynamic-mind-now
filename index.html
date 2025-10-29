@@ -28,20 +28,19 @@
       overflow-x: hidden;
     }
 
-    .hero {
+   .hero {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 6vw;
+  padding: 7vw 6vw;
   background: var(--white);
 }
 
 .hero-text {
   flex: 1 1 50%;
-  padding-right: 3vw;
-  line-height: 1.9;
-  animation: fadeInLeft 1.5s ease forwards;
+  padding-right: 4vw;
+  animation: fadeInLeft 1.3s ease forwards;
   opacity: 0;
 }
 
@@ -50,42 +49,95 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeInRight 1.5s ease forwards;
+  animation: fadeInRight 1.3s ease forwards;
   opacity: 0;
 }
 
 .hero-photo img {
   width: 100%;
-  max-width: 600px;
-  border-radius: 10px;
+  max-width: 580px;
+  border-radius: 12px;
   object-fit: cover;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
+/* --- text styling --- */
+.headline {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--black);
+  margin-bottom: 1.2rem;
+}
+
+.accent {
+  color: var(--royal);
+  display: inline-block;
+}
+
+.intro {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.promise {
+  font-size: 1.15rem;
+  background: var(--gray);
+  border-left: 5px solid var(--royal);
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  margin: 1.4rem 0;
+}
+
+.bio {
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 2rem;
+  line-height: 1.9;
+}
+
+/* CTA */
+.cta-btn {
+  display: inline-block;
+  background: var(--royal);
+  color: #fff;
+  font-weight: 700;
+  padding: 18px 36px;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 51, 153, 0.3);
+}
+.cta-btn:hover {
+  background: #001a66;
+  transform: translateY(-3px);
+}
+
+/* animations */
 @keyframes fadeInLeft {
-  from { opacity: 0; transform: translateX(-40px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {opacity: 0; transform: translateX(-40px);}
+  to   {opacity: 1; transform: translateX(0);}
 }
 
 @keyframes fadeInRight {
-  from { opacity: 0; transform: translateX(40px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {opacity: 0; transform: translateX(40px);}
+  to   {opacity: 1; transform: translateX(0);}
 }
 
+/* responsive */
 @media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-  .hero-text {
-    padding-right: 0;
-    margin-bottom: 2rem;
-  }
-  .hero-photo img {
-    width: 90%;
-    max-width: 400px;
-  }
+  .hero {flex-direction: column; text-align: center;}
+  .hero-text {padding-right: 0; margin-bottom: 2.5rem;}
+  .hero-photo img {width: 90%; max-width: 420px;}
+  .headline {font-size: 2rem;}
+  .intro, .promise, .bio {font-size: 1rem;}
 }
+
 
     @keyframes fadeInLeft {
       to { opacity: 1; transform: none; }
@@ -188,16 +240,44 @@
 <body>
  <section class="hero">
   <div class="hero-text">
-    <h1>Tired of Waitlists? Get a 504/IEP Evaluation in 48 Hours.</h1>
-    <p>Parents across NY, NJ, and CT are taking control. No more months of waiting — Dynamic Mental Health Services, LLC delivers professional ADHD and anxiety evaluations with signed school letters within 48 hours. No waitlists. No delays.</p>
-    <p><strong>Zinny Ezete, APRN, PMHNP-BC</strong> is a nationally board-certified psychiatric nurse practitioner with over a decade in mental health, trusted by families for her emotional intelligence, clinical expertise, and compassionate insight. She’s helped countless children and adults receive the support and clarity they need—fast, confidentially, and with care.</p>
-    <a href="https://calendly.com/zinny-ezete/adhd-anxiety-evaluation" target="_blank" rel="noopener" class="cta-btn">Book Your Evaluation Now</a>
+    <h1 class="headline">
+      Tired of Watching Your Child Struggle?
+      <br /><span class="accent">Get a 504/IEP Evaluation in 48 Hours — No Waitlists.</span>
+    </h1>
+
+    <p class="intro">
+      The school keeps asking for documentation. Teachers keep emailing for clarity.
+      Meanwhile, your child is anxious, falling behind, and you’re stuck waiting
+      months for an evaluation that could change everything.
+    </p>
+
+    <p class="promise">
+      <strong>Dynamic Mental Health Services, LLC</strong> delivers rapid, licensed ADHD & anxiety
+      evaluations within <strong>48 hours</strong> — complete with a signed diagnostic letter ready
+      for school submission. <em>No waiting lists. No insurance delays. Just answers.</em>
+    </p>
+
+    <div class="bio">
+      <p>
+        <strong>Zinny Ezete, APRN, PMHNP-BC</strong> is a board-certified psychiatric nurse
+        practitioner with over a decade in mental health. Known for her emotional intelligence
+        and unmatched clinical precision, she’s the trusted expert parents turn to when they need
+        clarity, compassion, and results that move schools to act.
+      </p>
+    </div>
+
+    <a href="https://calendly.com/zinny-ezete/adhd-anxiety-evaluation"
+       target="_blank"
+       rel="noopener"
+       class="cta-btn">Book Your 48-Hour Evaluation</a>
   </div>
 
   <div class="hero-photo">
-    <img src="https://i.ibb.co/S44k9yfC/IMG-8231.jpg" alt="Zinny Ezete, APRN, PMHNP-BC" />
+    <img src="https://i.ibb.co/S44k9yfC/IMG-8231.jpg"
+         alt="Zinny Ezete, APRN, PMHNP-BC" />
   </div>
 </section>
+
 
   <section>
     <div class="highlight-box">
