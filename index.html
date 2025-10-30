@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- 
+    Dynamic Mental Health Services, LLC 
+    Rapid 504/IEP ADHD & Anxiety Evaluations
+    Version: 1.0 | GitHub Pages Ready
+    Maintainer: Zinny Ezete, APRN, PMHNP-BC
+  -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dynamic Mental Health Services, LLC | Rapid 504/IEP ADHD & Anxiety Evaluations</title>
+
   <meta name="description" content="Parents: Tired of waitlists? Get a 504/IEP-ready ADHD or anxiety evaluation in 48 hours. Licensed PMHNP-BC in NY, NJ, CT. No waiting lists—book now and get a signed diagnostic letter to the school within 48 hours." />
   <meta name="theme-color" content="#003399" />
 
+  <!-- Base URL for GitHub Pages -->
+  <base href="./" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 
+  <!-- Styles -->
   <style>
     :root {
       --royal: #003399;
@@ -20,6 +33,7 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: "Open Sans", sans-serif;
       color: var(--black);
@@ -28,126 +42,120 @@
       overflow-x: hidden;
     }
 
-   .hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 7vw 6vw;
-  background: var(--white);
-}
-
-.hero-text {
-  flex: 1 1 50%;
-  padding-right: 4vw;
-  animation: fadeInLeft 1.3s ease forwards;
-  opacity: 0;
-}
-
-.hero-photo {
-  flex: 1 1 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeInRight 1.3s ease forwards;
-  opacity: 0;
-}
-
-.hero-photo img {
-  width: 100%;
-  max-width: 580px;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-}
-
-/* --- text styling --- */
-.headline {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.6rem;
-  font-weight: 700;
-  line-height: 1.25;
-  color: var(--black);
-  margin-bottom: 1.2rem;
-}
-
-.accent {
-  color: var(--royal);
-  display: inline-block;
-}
-
-.intro {
-  font-size: 1.2rem;
-  line-height: 1.9;
-  color: #222;
-  margin-bottom: 1rem;
-}
-
-.promise {
-  font-size: 1.15rem;
-  background: var(--gray);
-  border-left: 5px solid var(--royal);
-  padding: 1rem 1.2rem;
-  border-radius: 6px;
-  margin: 1.4rem 0;
-}
-
-.bio {
-  font-size: 1.05rem;
-  color: #333;
-  margin-bottom: 2rem;
-  line-height: 1.9;
-}
-
-/* CTA */
-.cta-btn {
-  display: inline-block;
-  background: var(--royal);
-  color: #fff;
-  font-weight: 700;
-  padding: 18px 36px;
-  border-radius: 6px;
-  font-size: 1.15rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 20px rgba(0, 51, 153, 0.3);
-}
-.cta-btn:hover {
-  background: #001a66;
-  transform: translateY(-3px);
-}
-
-/* animations */
-@keyframes fadeInLeft {
-  from {opacity: 0; transform: translateX(-40px);}
-  to   {opacity: 1; transform: translateX(0);}
-}
-
-@keyframes fadeInRight {
-  from {opacity: 0; transform: translateX(40px);}
-  to   {opacity: 1; transform: translateX(0);}
-}
-
-/* responsive */
-@media (max-width: 900px) {
-  .hero {flex-direction: column; text-align: center;}
-  .hero-text {padding-right: 0; margin-bottom: 2.5rem;}
-  .hero-photo img {width: 90%; max-width: 420px;}
-  .headline {font-size: 2rem;}
-  .intro, .promise, .bio {font-size: 1rem;}
-}
-
-
-    @keyframes fadeInLeft {
-      to { opacity: 1; transform: none; }
-      from { opacity: 0; transform: translateX(-40px); }
+    /* HERO */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 7vw 6vw;
+      background: var(--white);
     }
 
+    .hero-text {
+      flex: 1 1 50%;
+      padding-right: 4vw;
+      animation: fadeInLeft 1.3s ease forwards;
+      opacity: 0;
+    }
+
+    .hero-photo {
+      flex: 1 1 45%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeInRight 1.3s ease forwards;
+      opacity: 0;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      max-width: 580px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    /* TEXT */
+    .headline {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--black);
+      margin-bottom: 1.2rem;
+    }
+
+    .accent {
+      color: var(--royal);
+      display: inline-block;
+    }
+
+    .intro {
+      font-size: 1.2rem;
+      line-height: 1.9;
+      color: #222;
+      margin-bottom: 1rem;
+    }
+
+    .promise {
+      font-size: 1.15rem;
+      background: var(--gray);
+      border-left: 5px solid var(--royal);
+      padding: 1rem 1.2rem;
+      border-radius: 6px;
+      margin: 1.4rem 0;
+    }
+
+    .bio {
+      font-size: 1.05rem;
+      color: #333;
+      margin-bottom: 2rem;
+      line-height: 1.9;
+    }
+
+    /* CTA BUTTON */
+    .cta-btn {
+      display: inline-block;
+      background: var(--royal);
+      color: #fff;
+      font-weight: 700;
+      padding: 18px 36px;
+      border-radius: 6px;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0, 51, 153, 0.3);
+      text-decoration: none;
+    }
+    .cta-btn:hover {
+      background: #001a66;
+      transform: translateY(-3px);
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeInLeft {
+      from {opacity: 0; transform: translateX(-40px);}
+      to   {opacity: 1; transform: translateX(0);}
+    }
+
+    @keyframes fadeInRight {
+      from {opacity: 0; transform: translateX(40px);}
+      to   {opacity: 1; transform: translateX(0);}
+    }
+
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(50px);}
+      to   {opacity: 1; transform: none;}
+    }
+
+    /* CONTENT SECTIONS */
     section {
       padding: 70px 6vw;
       text-align: center;
     }
+
     .highlight-box {
       background: var(--gray);
       padding: 35px;
@@ -156,18 +164,20 @@
       animation: fadeUp 1.5s ease forwards;
       opacity: 0;
     }
-    @keyframes fadeUp {
-      to { opacity: 1; transform: none; }
-      from { opacity: 0; transform: translateY(50px); }
-    }
-    .highlight-box p { font-size: 1.2rem; line-height: 1.9; }
 
+    .highlight-box p {
+      font-size: 1.2rem;
+      line-height: 1.9;
+    }
+
+    /* PACKAGES */
     .packages {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
       margin-top: 40px;
     }
+
     .package {
       background: var(--gray);
       border-top: 6px solid var(--royal);
@@ -178,11 +188,34 @@
       transform: translateY(40px);
       transition: opacity 0.8s ease, transform 0.8s ease;
     }
-    .package.visible { opacity: 1; transform: none; }
-    .package h3 { color: var(--royal); font-family: "Montserrat"; margin-bottom: 10px; }
-    .price { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
-    .package ul { text-align: left; margin: 15px 0 20px; list-style: none; }
-    .package li { margin-bottom: 8px; }
+
+    .package.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .package h3 {
+      color: var(--royal);
+      font-family: "Montserrat";
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .package ul {
+      text-align: left;
+      margin: 15px 0 20px;
+      list-style: none;
+    }
+
+    .package li {
+      margin-bottom: 8px;
+    }
+
     .package a {
       background: var(--royal);
       color: var(--white);
@@ -192,8 +225,10 @@
       display: inline-block;
       font-weight: 700;
     }
+
     .package a:hover { background: #001a66; }
 
+    /* LEGAL SECTION */
     .legal {
       text-align: left;
       background: var(--white);
@@ -202,16 +237,19 @@
       font-size: 0.95rem;
       line-height: 1.8;
     }
+
     .legal h2 {
       font-family: "Montserrat";
       color: var(--royal);
       font-size: 1.6rem;
       margin-bottom: 15px;
     }
+
     .bottom-cta {
       text-align: center;
       margin-top: 40px;
     }
+
     .bottom-cta a {
       background: var(--royal);
       color: var(--white);
@@ -230,60 +268,76 @@
       border-top: 1px solid #ddd;
     }
 
+    footer a {
+      color: var(--royal);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVE */
     @media (max-width: 900px) {
-      .hero { flex-direction: column; }
-      .hero-image { position: relative; background-attachment: scroll; height: 50vh; }
+      .hero {flex-direction: column; text-align: center;}
+      .hero-text {padding-right: 0; margin-bottom: 2.5rem;}
+      .hero-photo img {width: 90%; max-width: 420px;}
+      .headline {font-size: 2rem;}
+      .intro, .promise, .bio {font-size: 1rem;}
     }
   </style>
 </head>
 
 <body>
- <section class="hero">
-  <div class="hero-text">
-    <h1 class="headline">
-      Tired of Watching Your Child Struggle?
-      <br /><span class="accent">Get a Signed 504/IEP Support Letter Within 48 Hours. — No Waitlists.</span>
-    </h1>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="headline">
+        Tired of Watching Your Child Struggle?
+        <br /><span class="accent">Get a Signed 504/IEP Support Letter Within 48 Hours — No Waitlists.</span>
+      </h1>
 
-    <p class="intro">
-      The school keeps asking for documentation. Teachers keep emailing for clarity.
-      Meanwhile, your child is anxious, falling behind, and you’re stuck waiting
-      months for an evaluation that could change everything.
-    </p>
-
-    <p class="promise">
-      <strong>Dynamic Mental Health Services, LLC</strong> led by Zinny Ezete, APRN, PMHNP-BC, delivers professional ADHD and anxiety evaluations within 
-      <strong>48 hours</strong> — complete with a signed diagnostic letter ready
-      for school submission. <em>No waiting lists. No insurance delays. Just answers.</em>
-    </p>
-
-    <div class="bio">
-      <p>
-        <strong>Zinny Ezete, APRN, PMHNP-BC</strong> is a board-certified psychiatric nurse
-        practitioner with over a decade of clinical experience. Known for her emotional intelligence
-        and unmatched clinical precision. Each evaluation is grounded in evidence-based assessment and delivers a signed, school-ready report within 48 hours. She’s the trusted clinical expert parents turn to when they need answers that matter, compassion they can feel, and documentation schools take seriously.
+      <p class="intro">
+        The school keeps asking for documentation. Teachers keep emailing for clarity.
+        Meanwhile, your child is anxious, falling behind, and you’re stuck waiting
+        months for an evaluation that could change everything.
       </p>
+
+      <p class="promise">
+        <strong>Dynamic Mental Health Services, LLC</strong>, led by Zinny Ezete, APRN, PMHNP-BC,
+        delivers professional ADHD and anxiety evaluations within <strong>48 hours</strong> —
+        complete with a signed diagnostic letter ready for school submission.
+        <em>No waiting lists. No insurance delays. Just answers.</em>
+      </p>
+
+      <div class="bio">
+        <p>
+          <strong>Zinny Ezete, APRN, PMHNP-BC</strong> is a board-certified psychiatric nurse
+          practitioner with over a decade of clinical experience. Each evaluation is grounded
+          in evidence-based assessment and delivers a signed, school-ready report within 48 hours.
+        </p>
+      </div>
+
+      <a href="https://calendly.com/zinny-ezete/adhd-anxiety-evaluation"
+         target="_blank"
+         rel="noopener"
+         class="cta-btn">Book Your ADHD/Anxiety Evaluation</a>
     </div>
 
-    <a href="https://calendly.com/zinny-ezete/adhd-anxiety-evaluation"
-       target="_blank"
-       rel="noopener"
-       class="cta-btn">Book Your ADHD/Anxiety Evaluation</a>
-  </div>
+    <div class="hero-photo">
+      <img src="https://i.ibb.co/S44k9yfC/IMG-8231.jpg"
+           alt="Zinny Ezete, APRN, PMHNP-BC" />
+    </div>
+  </section>
 
-  <div class="hero-photo">
-    <img src="https://i.ibb.co/S44k9yfC/IMG-8231.jpg"
-         alt="Zinny Ezete, APRN, PMHNP-BC" />
-  </div>
-</section>
-
-
+  <!-- PACKAGES SECTION -->
   <section>
     <div class="highlight-box">
       <p>You're watching your child struggle with focus, homework, and confidence. Teachers are emailing. The school is asking for documentation. You’ve done everything right—but the system is slow. That’s why we created a <strong>48-hour turnaround process</strong>—so you can get the clarity and documentation your child deserves without waiting months.</p>
     </div>
 
     <h2>Choose Your Evaluation Package</h2>
+
     <div class="packages">
       <div class="package">
         <h3>Essential</h3>
@@ -292,10 +346,11 @@
           <li>Comprehensive ADHD and/or Anxiety evaluation</li>
           <li>Parent/guardian interview</li>
           <li>Teacher input forms</li>
-          <li> Diagnostic letter for 504/IEP submission within 48 hours</li>
+          <li>Diagnostic letter for 504/IEP submission within 48 hours</li>
         </ul>
         <a href="https://calendly.com/zinny-ezete/adhd-anxiety-evaluation" target="_blank">Select Essential</a>
       </div>
+
       <div class="package">
         <h3>Premium</h3>
         <div class="price">$1,100</div>
@@ -303,10 +358,11 @@
           <li>Everything in Essential +</li>
           <li>Detailed functional report for school team</li>
           <li>Follow-up recommendations for teachers</li>
-          <li>One 15-minute parent consultation - post evaluation</li>
+          <li>One 15-minute parent consultation post-evaluation</li>
         </ul>
         <a href="https://calendly.com/zinny-ezete/adhd-anxiety-evaluation" target="_blank">Select Premium</a>
       </div>
+
       <div class="package">
         <h3>Comprehensive</h3>
         <div class="price">$1,500</div>
@@ -321,14 +377,15 @@
     </div>
   </section>
 
+  <!-- LEGAL & FOOTER -->
   <section class="legal">
     <h2>Required Disclosures (NY, NJ, CT Compliant)</h2>
     <p><strong>Payment Policy:</strong> Cash-pay model ensures expedited access. No direct insurance billing. A superbill is provided for possible out-of-network reimbursement.</p>
     <p><strong>Refund Policy:</strong> Full refund for cancellations made 24+ hours in advance. 50% refund for cancellations between 4–24 hours. No refund within 4 hours of the appointment.</p>
-    <p><strong>Informed Consent:</strong> Booking confirms consent for telehealth communication via SimplePractice, PHI storage, and optional release of diagnostic letters. For minors, parental consent and child assent (age 7+) are required.</p>
-    <p><strong>School Letters:</strong> Letters are issued solely to support school evaluations. Schools retain full authority over 504/IEP decisions. Dynamic Mental Health Services, LLC bears no responsibility for district outcomes.</p>
+    <p><strong>Informed Consent:</strong> Booking confirms consent for telehealth communication via SimplePractice, PHI storage, and optional release of diagnostic letters.</p>
+    <p><strong>School Letters:</strong> Letters are issued solely to support school evaluations. Schools retain full authority over 504/IEP decisions.</p>
     <p><strong>Emergency Notice:</strong> Not for emergencies. Call 911 or go to your nearest emergency room if in crisis.</p>
-    <p><strong>Privacy:</strong> Read our <a href="/docs/privacy.html" target="_blank">Privacy Policy</a>. Contact <a href="mailto:contact@mydynamicmind.com">contact@mydynamicmind.com</a> for compliance questions.</p>
+    <p><strong>Privacy:</strong> Read our <a href="docs/privacy.html" target="_blank">Privacy Policy</a>. Contact <a href="mailto:contact@mydynamicmind.com">contact@mydynamicmind.com</a> for compliance questions.</p>
 
     <h2>HIPAA Policy Summary</h2>
     <p>Protected health information (PHI) is securely handled via SimplePractice under a Business Associate Agreement. You have the right to access, amend, and restrict your PHI. Breach notifications occur within 60 days per HIPAA standards.</p>
@@ -340,12 +397,12 @@
 
   <footer>
     <p>Licensed in NY · NJ · CT | © 2025 Dynamic Mental Health Services, LLC | All Rights Reserved</p>
-    <p><a href="/docs/privacy.html">Privacy Policy</a> | <a href="/docs/terms.html">Terms of Use</a></p>
+    <p><a href="docs/privacy.html">Privacy Policy</a> | <a href="docs/terms.html">Terms of Use</a></p>
     <p>All disputes are governed by the laws of the State of New Jersey and resolved through binding arbitration where legally permissible.</p>
   </footer>
 
+  <!-- Scroll animation -->
   <script>
-    // Scroll reveal for packages
     const packages = document.querySelectorAll('.package');
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -354,6 +411,7 @@
         }
       });
     }, { threshold: 0.3 });
+
     packages.forEach(pkg => observer.observe(pkg));
   </script>
 </body>
