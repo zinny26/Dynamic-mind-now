@@ -4,26 +4,21 @@
   <!-- 
     Dynamic Mental Health Services, LLC 
     Rapid 504/IEP ADHD & Anxiety Evaluations
-    Version: 1.0 | GitHub Pages Ready
+    Version: 2.0 | Mobile Optimized | GitHub + Netlify Ready
     Maintainer: Zinny Ezete, APRN, PMHNP-BC
   -->
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dynamic Mental Health Services, LLC | Rapid 504/IEP ADHD & Anxiety Evaluations</title>
-
-  <meta name="description" content="Parents: Tired of waitlists? Get a 504/IEP-ready ADHD or anxiety evaluation in 48 hours. Licensed PMHNP-BC in NY, NJ, CT. No waiting lists—book now and get a signed diagnostic letter to the school within 48 hours." />
+  <title>Dynamic Mental Health Services, LLC | 48-Hour ADHD & Anxiety Evaluations</title>
+  <meta name="description" content="Tired of waitlists? Get a 504/IEP-ready ADHD or anxiety evaluation in 48 hours. Licensed PMHNP-BC in NY, NJ, CT. No waiting lists—book now and get a signed diagnostic letter for school within 48 hours." />
   <meta name="theme-color" content="#003399" />
-
-  <!-- Base URL for GitHub Pages -->
-  <base href="./" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 
-  <!-- Styles -->
   <style>
     :root {
       --royal: #003399;
@@ -57,6 +52,7 @@
       padding-right: 4vw;
       animation: fadeInLeft 1.3s ease forwards;
       opacity: 0;
+      min-width: 320px;
     }
 
     .hero-photo {
@@ -66,11 +62,12 @@
       align-items: center;
       animation: fadeInRight 1.3s ease forwards;
       opacity: 0;
+      min-width: 280px;
     }
 
     .hero-photo img {
       width: 100%;
-      max-width: 580px;
+      max-width: 500px;
       border-radius: 12px;
       object-fit: cover;
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
@@ -79,7 +76,7 @@
     /* TEXT */
     .headline {
       font-family: "Montserrat", sans-serif;
-      font-size: 2.6rem;
+      font-size: 2.5rem;
       font-weight: 700;
       line-height: 1.25;
       color: var(--black);
@@ -122,52 +119,46 @@
       font-weight: 700;
       padding: 18px 36px;
       border-radius: 6px;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       transition: all 0.3s ease;
       box-shadow: 0 6px 20px rgba(0, 51, 153, 0.3);
       text-decoration: none;
+      margin-top: 1.2rem;
+      white-space: nowrap;
     }
     .cta-btn:hover {
       background: #001a66;
       transform: translateY(-3px);
     }
 
-    /* ANIMATIONS */
-    @keyframes fadeInLeft {
-      from {opacity: 0; transform: translateX(-40px);}
-      to   {opacity: 1; transform: translateX(0);}
-    }
-
-    @keyframes fadeInRight {
-      from {opacity: 0; transform: translateX(40px);}
-      to   {opacity: 1; transform: translateX(0);}
-    }
-
-    @keyframes fadeUp {
-      from {opacity: 0; transform: translateY(50px);}
-      to   {opacity: 1; transform: none;}
-    }
-
-    /* CONTENT SECTIONS */
-    section {
-      padding: 70px 6vw;
-      text-align: center;
-    }
-
+    /* HIGHLIGHT SECTION */
     .highlight-box {
       background: var(--gray);
-      padding: 35px;
+      padding: 45px;
       border-left: 6px solid var(--royal);
-      margin-bottom: 60px;
-      animation: fadeUp 1.5s ease forwards;
+      margin: 70px auto;
+      border-radius: 10px;
+      max-width: 900px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
       opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1.2s ease, transform 1.2s ease;
     }
-
+    .highlight-box.visible {
+      opacity: 1;
+      transform: none;
+    }
     .highlight-box p {
       font-size: 1.2rem;
       line-height: 1.9;
+      color: #111;
+      margin-bottom: 1.2rem;
+    }
+    .highlight-cta {
+      text-align: center;
+      margin-top: 20px;
     }
 
     /* PACKAGES */
@@ -228,7 +219,7 @@
 
     .package a:hover { background: #001a66; }
 
-    /* LEGAL SECTION */
+    /* LEGAL */
     .legal {
       text-align: left;
       background: var(--white);
@@ -237,28 +228,29 @@
       font-size: 0.95rem;
       line-height: 1.8;
     }
-
     .legal h2 {
       font-family: "Montserrat";
       color: var(--royal);
       font-size: 1.6rem;
       margin-bottom: 15px;
     }
-
     .bottom-cta {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 50px;
     }
-
     .bottom-cta a {
+      display: inline-block;
       background: var(--royal);
       color: var(--white);
-      padding: 15px 35px;
+      padding: 18px 36px;
       font-weight: 700;
-      border-radius: 5px;
+      border-radius: 6px;
+      font-size: 1.1rem;
       text-transform: uppercase;
       text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0, 51, 153, 0.3);
     }
+    .bottom-cta a:hover { background: #001a66; }
 
     footer {
       text-align: center;
@@ -267,23 +259,27 @@
       padding: 40px 15px;
       border-top: 1px solid #ddd;
     }
+    footer a { color: var(--royal); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
 
-    footer a {
-      color: var(--royal);
-      text-decoration: none;
+    /* ANIMATIONS */
+    @keyframes fadeInLeft {
+      from {opacity: 0; transform: translateX(-40px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+    @keyframes fadeInRight {
+      from {opacity: 0; transform: translateX(40px);}
+      to {opacity: 1; transform: translateX(0);}
     }
 
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* RESPONSIVE */
+    /* RESPONSIVE FIXES */
     @media (max-width: 900px) {
-      .hero {flex-direction: column; text-align: center;}
-      .hero-text {padding-right: 0; margin-bottom: 2.5rem;}
-      .hero-photo img {width: 90%; max-width: 420px;}
-      .headline {font-size: 2rem;}
-      .intro, .promise, .bio {font-size: 1rem;}
+      .hero {flex-direction: column-reverse; text-align: center; padding: 10vw 5vw;}
+      .hero-photo {margin-bottom: 2rem;}
+      .hero-photo img {width: 90%; max-width: 400px;}
+      .headline {font-size: 1.9rem; line-height: 1.3;}
+      .intro, .promise, .bio {font-size: 1rem; line-height: 1.8;}
+      .cta-btn, .bottom-cta a {width: 100%; max-width: 320px; margin: 1.5rem auto 0;}
     }
   </style>
 </head>
@@ -308,7 +304,6 @@
         delivers professional ADHD and anxiety evaluations within <strong>48 hours</strong> —
         complete with a signed diagnostic letter ready for school submission.
         <em>No waiting lists. No insurance delays. <span style="white-space: nowrap;">Just answers.</span></em>
-
       </p>
 
       <div class="bio">
@@ -331,14 +326,28 @@
     </div>
   </section>
 
-  <!-- PACKAGES SECTION -->
-  <section>
-    <div class="highlight-box">
-      <p>You're watching your child struggle with focus, homework, and confidence. Teachers are emailing. The school is asking for documentation. You’ve done everything right—but the system is slow. That’s why we created a <strong>48-hour turnaround process</strong>—so you can get the clarity and documentation your child deserves without waiting months.</p>
+  <!-- EMOTIONAL SECTION -->
+  <section class="highlight-box">
+    <p>
+      Every day you see it — your child fighting to focus, melting down over homework, or shutting down in class.  
+      Teachers notice, emails keep coming, and the school says they “need documentation.”  
+      But the waitlists stretch for months. <strong>You know your child can’t wait that long.</strong>  
+    </p>
+    <p>
+      That’s why <strong>Dynamic Mental Health Services, LLC</strong> built a streamlined, licensed evaluation process that delivers results in <strong>48 hours</strong> —  
+      with a signed diagnostic letter schools recognize and respect.  
+      No waiting. No confusion. Just the clarity, documentation, and peace of mind every parent deserves.
+    </p>
+    <div class="highlight-cta">
+      <a href="https://calendly.com/dynamicmentalhealth/adhd-anxiety-diagnostic-evaluation" 
+         target="_blank" 
+         class="cta-btn">Book a 48-Hour Evaluation</a>
     </div>
+  </section>
 
+  <!-- PACKAGES -->
+  <section>
     <h2>Choose Your Evaluation Package</h2>
-
     <div class="packages">
       <div class="package">
         <h3>Essential</h3>
@@ -378,7 +387,7 @@
     </div>
   </section>
 
-  <!-- LEGAL & FOOTER -->
+  <!-- LEGAL -->
   <section class="legal">
     <h2>Required Disclosures (NY, NJ, CT Compliant)</h2>
     <p><strong>Payment Policy:</strong> Cash-pay model ensures expedited access. No direct insurance billing. A superbill is provided for possible out-of-network reimbursement.</p>
@@ -402,18 +411,23 @@
     <p>All disputes are governed by the laws of the State of New Jersey and resolved through binding arbitration where legally permissible.</p>
   </footer>
 
-  <!-- Scroll animation -->
+  <!-- ANIMATIONS -->
   <script>
     const packages = document.querySelectorAll('.package');
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('visible');
       });
     }, { threshold: 0.3 });
-
     packages.forEach(pkg => observer.observe(pkg));
+
+    const highlights = document.querySelectorAll('.highlight-box');
+    const highlightObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.25 });
+    highlights.forEach(box => highlightObserver.observe(box));
   </script>
 </body>
 </html>
