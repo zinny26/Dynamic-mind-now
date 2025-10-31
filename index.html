@@ -401,4 +401,31 @@
     <p>Licensed in NY · NJ · CT | © 2025 Dynamic Mental Health Services, LLC | All Rights Reserved</p>
     <p>
       <a href="docs/privacy.html" target="_blank">Privacy Policy</a> |
-      <a href="docs
+      <a href="docs…the footer continues seamlessly here:
+
+```html
+      <a href="docs/terms.html" target="_blank">Terms of Use</a>
+    </p>
+    <p>All disputes are governed by the laws of the State of New Jersey and resolved through binding arbitration where legally permissible.</p>
+  </footer>
+
+  <!-- SCROLL ANIMATIONS -->
+  <script>
+    const packages = document.querySelectorAll('.package');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.3 });
+    packages.forEach(pkg => observer.observe(pkg));
+
+    const highlights = document.querySelectorAll('.highlight-box');
+    const highlightObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.25 });
+    highlights.forEach(box => highlightObserver.observe(box));
+  </script>
+</body>
+</html>
