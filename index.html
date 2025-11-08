@@ -3,265 +3,218 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dynamic Mental Health Services, LLC | 48-Hour ADHD & Anxiety Evaluations</title>
-  <meta name="description" content="Board-certified Psychiatric Nurse Practitioners delivering 48-hour ADHD & Anxiety evaluations for children, teens & young adults — DSM-5–based reports and signed school letters if criteria are met. Licensed in NY, NJ & CT." />
-  <link rel="canonical" href="https://mydynamicmind.com/adhd-anxiety-evaluations" />
+  <title>Rapid ADHD & Anxiety Evaluations | Dynamic Mental Health Services</title>
+  <meta name="description" content="Get a rapid ADHD/Anxiety evaluation and clinician-signed 504/IEP diagnostic letter sent to your child's school within 48 hours. No waitlists. No insurance delays. Licensed in NY, NJ & CT." />
+  <link rel="canonical" href="https://rapidadhdeval.com" />
   <meta name="theme-color" content="#003399" />
-  <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 
-  <!-- Structured Data for SEO -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
     "name": "Dynamic Mental Health Services, LLC",
-    "url": "https://mydynamicmind.com",
+    "url": "https://rapidadhdeval.com",
     "image": "https://i.ibb.co/S44k9yfC/IMG-8231.jpg",
-    "description": "Board-certified Psychiatric Nurse Practitioners offering ADHD & Anxiety evaluations with results in 48 hours if DSM-5 criteria are met.",
+    "description": "Board-certified Psychiatric Nurse Practitioners offering rapid ADHD and Anxiety evaluations with 504/IEP diagnostic letters delivered in 48 hours.",
     "founder": { "@type": "Person", "name": "Zinny Ezete, APRN, PMHNP-BC" },
-    "medicalSpecialty": ["ADHD", "Anxiety"],
     "areaServed": ["New York", "New Jersey", "Connecticut"],
-    "openingHours": "Mo-Fr 09:00-18:00",
-    "priceRange": "$$",
-    "sameAs": ["https://www.linkedin.com/in/zinny-ezete"]
+    "medicalSpecialty": ["ADHD", "Anxiety"],
+    "openingHours": "Mo-Fr 09:00-18:00"
   }
   </script>
 
   <style>
-    :root{
-      --royal:#003399; --midblue:#1a1a80; --black:#000; --white:#fff;
-      --gray:#f5f7fb; --softgray:#e9ecf5;
+    :root {
+      --royal:#003399; --midblue:#1a1a80; --gray:#f5f7fb; --white:#fff;
+      --softgray:#e9ecf5; --black:#111;
     }
     *{box-sizing:border-box;margin:0;padding:0}
     body{
-      font-family:"Open Sans",sans-serif; color:var(--black);
-      background:linear-gradient(160deg,var(--white)0%,var(--softgray)50%,var(--gray)100%);
-      line-height:1.75; overflow-x:hidden;
+      font-family:"Open Sans",sans-serif;color:var(--black);
+      background:var(--white);line-height:1.6;overflow-x:hidden;
     }
-    a{color:inherit}
 
-    /* ===== HERO ===== */
+    .topbar{
+      background:var(--royal);color:#fff;text-align:center;
+      padding:8px 6vw;font-size:.9rem;font-weight:600;
+    }
+
     .hero{
-      display:flex; align-items:center; justify-content:space-between; gap:40px;
-      padding:8vw 8vw; background:linear-gradient(to right,var(--white)0%,#f4f6fb 100%);
-      border-bottom:2px solid rgba(0,0,0,.05);
-      flex-wrap:wrap;
+      display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;
+      padding:8vw 8vw;background:linear-gradient(to right,#fff,#eef2f9);
     }
-    .hero-photo{flex:1 1 45%; min-width:280px; order:0;}
-    .hero-photo .frame{position:relative; max-width:520px; margin-inline:auto;}
+
+    .hero-photo{flex:1 1 45%;order:0;text-align:center}
     .hero-photo img{
-      width:100%; height:auto; max-width:520px; aspect-ratio:4/5; object-fit:cover;
-      border-radius:14px; box-shadow:0 22px 48px rgba(0,0,0,.28);
-      transition:transform .4s ease, box-shadow .4s ease;
+      width:100%;max-width:460px;border-radius:14px;
+      box-shadow:0 20px 40px rgba(0,0,0,.25);object-fit:cover;
     }
-    .hero-photo img:hover{ transform:scale(1.015); box-shadow:0 28px 60px rgba(0,0,0,.3); }
-    .expert-tag{
-      position:absolute; left:18px; bottom:18px; background:rgba(0,51,153,.92); color:#fff;
-      padding:10px 14px; border-radius:8px; font-size:.9rem; line-height:1.4;
-      box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    .hero-text{flex:1 1 50%;order:1;min-width:320px;text-align:left}
+    .hero h1{
+      font-family:"Montserrat",sans-serif;font-weight:700;
+      font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.25;margin-bottom:1rem;
+      color:var(--black);
     }
-    .hero-text{flex:1 1 50%; min-width:320px; order:1; opacity:0; animation:fadeInLeft 800ms ease forwards;}
-    .headline{
-      font-family:"Montserrat",sans-serif; font-size:clamp(1.9rem,4.4vw,3rem);
-      font-weight:700; line-height:1.25; margin-bottom:1rem; color:#111;
-    }
-    .accent{
+    .hero h1 span{
       background:linear-gradient(90deg,var(--royal),var(--midblue));
-      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;
     }
-    .intro{font-size:clamp(1rem,2vw,1.15rem); color:#222; margin-bottom:1.2rem;}
+    .hero p{
+      font-size:1.05rem;color:#222;margin-bottom:1.4rem;
+    }
     .cta-btn{
-      display:inline-block; background:var(--royal); color:#fff; font-weight:700;
-      padding:16px 28px; border-radius:8px; text-transform:uppercase; letter-spacing:.4px;
-      text-decoration:none; box-shadow:0 10px 28px rgba(0,51,153,.32); transition:all .25s ease;
+      background:var(--royal);color:#fff;font-weight:700;
+      padding:16px 30px;border-radius:8px;text-decoration:none;
+      text-transform:uppercase;letter-spacing:.4px;
+      box-shadow:0 8px 24px rgba(0,51,153,.3);
+      transition:all .3s ease;
+      display:inline-block;
     }
-    .cta-btn:hover{ background:var(--midblue); transform:translateY(-3px) }
+    .cta-btn:hover{background:var(--midblue);transform:translateY(-3px)}
+    .refund-note{font-size:.85rem;color:#555;margin-top:10px;}
 
-    /* ===== TRUST BAR ===== */
-    .trustbar{background:#fff; padding:32px 6vw; text-align:center; border-bottom:1px solid #e6e8f0;}
-    .trustbar .badges img{height:46px; margin:0 10px;}
-    .trustbar p{max-width:780px; margin:12px auto 0; color:#444}
-
-    /* ===== HIGHLIGHT ===== */
-    .highlight{
-      background:linear-gradient(160deg,#ffffff 0%,#eef2fa 100%);
-      padding:48px 6vw; border-left:6px solid var(--royal); max-width:980px; margin:64px auto;
-      border-radius:12px; box-shadow:0 10px 26px rgba(0,0,0,.08);
-      opacity:0; transform:translateY(40px); transition:opacity 600ms ease, transform 600ms ease;
+    .availability{
+      background:#eaf0ff;text-align:center;padding:10px 0;
+      font-weight:600;color:var(--royal);
     }
-    .highlight.visible{opacity:1; transform:none;}
-    .highlight p{font-size:clamp(1rem,2vw,1.15rem); color:#111; margin-bottom:1rem;}
-    .center{text-align:center}
 
-    /* ===== PACKAGES ===== */
-    .packages-wrap{padding:60px 6vw; background:#f9fafc; text-align:center;}
-    .section-title{font-family:"Montserrat",sans-serif; color:var(--royal); font-size:2rem; margin-bottom:10px;}
-    .section-sub{max-width:860px; margin:10px auto 30px; font-size:1.05rem; color:#333;}
-    .packages{
-      display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:28px; align-items:stretch;
+    .trustbar{
+      background:#fff;text-align:center;padding:30px 6vw;border-bottom:1px solid #ddd;
     }
+    .trustbar img{height:48px;margin:0 10px}
+    .trustbar p{margin-top:10px;color:#444;font-weight:600}
+
+    .packages-wrap{background:#f9fafc;padding:60px 6vw;text-align:center}
+    .packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;margin-top:30px}
     .package{
-      background:#fff; border-top:6px solid var(--royal); border-radius:12px; padding:28px;
-      box-shadow:0 6px 16px rgba(0,0,0,.06); transition:transform .25s ease;
-      display:flex; flex-direction:column; justify-content:space-between; text-align:left;
+      background:#fff;border-top:6px solid var(--royal);border-radius:12px;
+      box-shadow:0 6px 16px rgba(0,0,0,.06);padding:28px;text-align:left;
+      transition:transform .25s ease;display:flex;flex-direction:column;justify-content:space-between;
     }
     .package:hover{transform:translateY(-6px)}
-    .package h3{font-family:"Montserrat"; color:var(--royal); margin-bottom:10px;}
-    .price{font-size:1.45rem; font-weight:700; margin-bottom:12px;}
-    .package ul{list-style:none; margin:8px 0 20px; padding:0;}
-    .package li{margin-bottom:8px; color:#222;}
-    .package a{align-self:flex-start; background:var(--royal); color:#fff; padding:10px 18px; border-radius:6px; text-decoration:none; font-weight:700;}
+    .package h3{font-family:"Montserrat";color:var(--royal);margin-bottom:10px}
+    .price{font-size:1.4rem;font-weight:700;margin-bottom:10px}
+    .package ul{list-style:none;margin:0 0 20px 0;padding:0}
+    .package li{margin-bottom:8px;color:#222}
+    .package a{background:var(--royal);color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:700;text-align:center}
     .package a:hover{background:var(--midblue)}
+    .refund-note-small{font-size:.8rem;color:#555;margin-top:12px}
 
-    /* ===== LEGAL ===== */
-    .legal{background:linear-gradient(to top,#f8faff 0%,#ffffff 100%); border-top:2px solid #e6e8f0; padding:56px 6vw; font-size:.98rem; line-height:1.8;}
-    .legal h2{font-family:"Montserrat"; color:var(--royal); margin-bottom:10px;}
-    .legal p{max-width:980px; margin:10px auto; color:#222;}
-
-    footer{background:#112; color:#fff; text-align:center; padding:38px 16px;}
-    footer a{color:#9bb3ff; text-decoration:none}
-
-    /* ===== RESPONSIVE ORDER (Mobile: Photo FIRST) ===== */
-    @media (max-width: 992px){
-      .hero{flex-direction:column; text-align:center;}
-      .hero-photo{order:-1;} /* Photo FIRST on mobile */
-      .hero-text{order:1;}
-      .hero .cta-btn{width:100%; max-width:360px;}
-      .expert-tag{left:50%; transform:translateX(-50%);}
+    .legal{
+      background:linear-gradient(to top,#f8faff 0%,#fff 100%);
+      border-top:2px solid #e6e8f0;padding:56px 6vw;font-size:.98rem;line-height:1.8;
     }
+    .legal h2{font-family:"Montserrat";color:var(--royal);margin-bottom:10px}
+    .legal p{max-width:900px;margin:10px auto;color:#222}
 
-    @keyframes fadeInLeft{from{opacity:0; transform:translateX(-36px)} to{opacity:1; transform:none}}
+    footer{background:#112;color:#fff;text-align:center;padding:40px 15px}
+    footer a{color:#9bb3ff;text-decoration:none}
+
+    @media(max-width:992px){
+      .hero{flex-direction:column;text-align:center}
+      .hero-photo{order:-1;margin-bottom:2rem}
+      .hero-text{text-align:center}
+    }
   </style>
 </head>
 
 <body>
-  <!-- HERO -->
-  <header class="hero" role="banner" aria-label="ADHD and Anxiety Evaluation Hero">
-    <figure class="hero-photo">
-      <div class="frame">
-        <img
-          src="https://i.ibb.co/S44k9yfC/IMG-8231.jpg"
-          srcset="https://i.ibb.co/S44k9yfC/IMG-8231.jpg 1x, https://i.ibb.co/S44k9yfC/IMG-8231.jpg 2x"
-          alt="Zinny Ezete, APRN, PMHNP-BC, board-certified psychiatric nurse practitioner"
-          loading="eager" fetchpriority="high" />
-        <figcaption class="expert-tag" aria-label="Clinician identity">
-          Zinny Ezete, APRN, PMHNP-BC<br /><span style="font-weight:400;">Founder • Board-Certified Psychiatric NP</span>
-        </figcaption>
-      </div>
-    </figure>
+  <div class="topbar">Appointments Available Today • Results in 48 Hours • HIPAA-Compliant Telehealth</div>
 
-    <div class="hero-text" role="region" aria-label="Introductory message">
-      <h1 class="headline">
-        <span class="accent">You’ve tried everything — the struggle continues.</span><br />
-        Let’s find what’s really going on — and deliver a clear, clinician-signed answer in 48 hours.
-      </h1>
-      <p class="intro">
-        For your child (6–17) or young adult, focus and anxiety challenges aren’t a phase. You don’t have to wait months.
-        Our board-certified clinicians provide DSM-5–based ADHD & Anxiety evaluations with results and a signed school letter
-        within 48 hours if diagnostic criteria are met — licensed in NY, NJ, and CT.
-      </p>
-      <a class="cta-btn" href="https://calendly.com/dynamicmentalhealth/adhd-anxiety-diagnostic-evaluation" target="_blank" rel="noopener" aria-label="Book your forty-eight hour evaluation">
-        Book Your 48-Hour Evaluation
-      </a>
-      <p style="font-size:.86rem;color:#6b7280;margin-top:8px;">Secure booking — HIPAA-compliant telehealth</p>
+  <section class="hero">
+    <div class="hero-photo">
+      <img src="https://i.ibb.co/S44k9yfC/IMG-8231.jpg" alt="Zinny Ezete, APRN, PMHNP-BC" loading="lazy" />
     </div>
-  </header>
-
-  <!-- TRUST BAR -->
-  <section class="trustbar" aria-label="Trust and certification badges">
-    <div class="badges" role="img" aria-label="Certified and compliant practice">
-      <img src="https://i.imgur.com/8yY7K2m.png" alt="PMHNP-BC Board Certification" />
-      <img src="https://i.imgur.com/3xL5p9Q.png" alt="DSM-5 Standards" />
-      <img src="https://i.imgur.com/xMxxuKb.png" alt="HIPAA Compliant Platform" />
+    <div class="hero-text">
+      <h1><span>Get a Rapid ADHD/Anxiety Evaluation</span> + Clinician-Signed 504/IEP Letter Sent to Your Child’s School in 48 Hours</h1>
+      <p>No waitlists. No insurance delays. Just certified answers from licensed psychiatric nurse practitioners in NY, NJ & CT.</p>
+      <a href="https://calendly.com/dynamicmentalhealth/adhd-anxiety-diagnostic-evaluation" class="cta-btn" target="_blank">Book Evaluation</a>
+      <p class="refund-note">If DSM-5 criteria aren’t met, a $250 evaluation fee applies and the remaining balance is refunded within 10 business days once processed by your bank or card provider.</p>
     </div>
-    <p><strong>Trusted by parents. Recognized by educators.</strong> Licensed telehealth practice serving New York, New Jersey, and Connecticut.</p>
   </section>
 
-  <!-- HIGHLIGHT / EMPATHY -->
-  <main>
-    <section class="highlight" aria-label="How we help">
-      <p>Parents often whisper, “I just want to know what’s wrong.” You’re not alone. The uncertainty hurts — for you and your child. That’s why we built a process that cuts through confusion with clinical clarity.</p>
-      <p><strong>Dynamic Mental Health Services, LLC</strong> provides rigorous, 504/IEP-ready assessments. Results are delivered within 48 hours when DSM-5 criteria are met. We include a signed letter suitable for school review. School decisions vary by district; no outcome is guaranteed.</p>
-      <div class="center" style="margin-top:16px;">
-        <a class="cta-btn" href="https://calendly.com/dynamicmentalhealth/adhd-anxiety-diagnostic-evaluation" target="_blank" rel="noopener">Get Clarity Now</a>
+  <div class="availability">✅ Next Appointment Available Today — Book Before Slots Fill Up</div>
+
+  <section class="trustbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Padlock-blue.svg" alt="HIPAA Secure" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Check_mark_icon_blue.svg" alt="Board Certified Clinicians" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Map_marker_icon_blue.svg" alt="Licensed in NY NJ CT" />
+    <p>HIPAA Secure • Board-Certified Clinicians • Licensed in NY • NJ • CT</p>
+  </section>
+
+  <section class="packages-wrap">
+    <h2 style="font-family:Montserrat;color:#003399;">Choose Your Evaluation Package</h2>
+    <p>All evaluations include a 60-minute telehealth visit by a board-certified psychiatric nurse practitioner. Reports and signed 504/IEP letters are provided within 48 hours if DSM-5 criteria are met.</p>
+    <div class="packages">
+      <div class="package">
+        <div>
+          <h3>Essential</h3>
+          <div class="price">$850</div>
+          <ul>
+            <li>ADHD/Anxiety evaluation</li>
+            <li>Parent & teacher input</li>
+            <li>Signed school letter (if criteria met)</li>
+          </ul>
+        </div>
+        <div>
+          <a href="https://calendly.com/dynamicmentalhealth/adhd-anxiety-diagnostic-evaluation" target="_blank">Book Evaluation</a>
+          <p class="refund-note-small">If criteria aren’t met, $250 applies and the balance is refunded within 10 business days.</p>
+        </div>
       </div>
-    </section>
 
-    <!-- PACKAGES -->
-    <section class="packages-wrap" aria-label="Evaluation packages">
-      <h2 class="section-title">Choose Your Evaluation Package</h2>
-      <p class="section-sub">Sessions are led by board-certified psychiatric nurse practitioners. Each includes a 60-minute telehealth evaluation. Reports are delivered within 48 hours if diagnostic criteria are met.</p>
-      <div class="packages" role="list">
-        <article class="package" role="listitem" aria-label="Essential Package">
-          <div>
-            <h3>Essential</h3>
-            <div class="price">$850</div>
-            <ul>
-              <li>ADHD/Anxiety evaluation</li>
-              <li>Parent & teacher input</li>
-              <li>Signed school letter (if criteria met)</li>
-            </ul>
-          </div>
-          <a href="https://calendly.com/dynamicmentalhealth/adhd-anxiety-diagnostic-evaluation" target="_blank" rel="noopener" aria-label="Book Essential evaluation">Book Now</a>
-        </article>
-
-        <article class="package" role="listitem" aria-label="Premium Package">
-          <div>
-            <h3>Premium</h3>
-            <div class="price">$1,100</div>
-            <ul>
-              <li>Everything in Essential +</li>
-              <li>Functional report</li>
-              <li>Parent consult call</li>
-            </ul>
-          </div>
-          <a href="https://calendly.com/dynamicmentalhealth/adhd-anxiety-diagnostic-evaluation" target="_blank" rel="noopener" aria-label="Book Premium evaluation">Reserve Spot</a>
-        </article>
-
-        <article class="package" role="listitem" aria-label="Comprehensive Package">
-          <div>
-            <h3>Comprehensive</h3>
-            <div class="price">$1,500</div>
-            <ul>
-              <li>Everything in Premium +</li>
-              <li>Extended evaluation (beyond ADHD/Anxiety)</li>
-              <li>School meeting support</li>
-              <li>Two 30-minute follow-ups</li>
-            </ul>
-          </div>
-          <a href="https://calendly.com/dynamicmentalhealth/adhd-anxiety-diagnostic-evaluation" target="_blank" rel="noopener" aria-label="Book Comprehensive evaluation">Start Now</a>
-        </article>
+      <div class="package">
+        <div>
+          <h3>Premium</h3>
+          <div class="price">$1,100</div>
+          <ul>
+            <li>Everything in Essential +</li>
+            <li>Functional report</li>
+            <li>Parent consult call</li>
+          </ul>
+        </div>
+        <div>
+          <a href="https://calendly.com/dynamicmentalhealth/adhd-anxiety-diagnostic-evaluation" target="_blank">Book Evaluation</a>
+          <p class="refund-note-small">If criteria aren’t met, $250 applies and the balance is refunded within 10 business days.</p>
+        </div>
       </div>
-    </section>
-  </main>
 
-  <!-- LEGAL & DISCLOSURES -->
-  <section class="legal" aria-label="Required disclosures and legal notices">
+      <div class="package">
+        <div>
+          <h3>Comprehensive</h3>
+          <div class="price">$1,500</div>
+          <ul>
+            <li>Everything in Premium +</li>
+            <li>Extended evaluation (beyond ADHD/Anxiety)</li>
+            <li>School meeting support + two 30-min follow-ups</li>
+          </ul>
+        </div>
+        <div>
+          <a href="https://calendly.com/dynamicmentalhealth/adhd-anxiety-diagnostic-evaluation" target="_blank">Book Evaluation</a>
+          <p class="refund-note-small">If criteria aren’t met, $250 applies and the balance is refunded within 10 business days.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="legal">
     <h2>Required Disclosures & Legal Notices</h2>
     <p><strong>Licensure:</strong> Telehealth evaluations are conducted by board-certified psychiatric nurse practitioners licensed in New York, New Jersey, and Connecticut. NPI verification available upon request.</p>
-    <p><strong>Payment Policy:</strong> Cash-pay model for expedited access. Superbills are provided for potential out-of-network reimbursement (not guaranteed).</p>
-    <p><strong>Refund Policy:</strong> 24+ hours notice = full refund; 4–24 hours = 50% refund; &lt;4 hours = nonrefundable.</p>
-    <p><strong>Privacy:</strong> HIPAA-compliant video platform. Review our <a href="/privacy.html" target="_blank" rel="noopener">Privacy Policy</a> and <a href="/terms.html" target="_blank" rel="noopener">Terms</a>.</p>
-    <p><strong>Disclaimer:</strong> Evaluations are diagnostic assessments only. Diagnostic conclusions are made solely if DSM-5 criteria are clinically met by the evaluating clinician. School acceptance and accommodations are determined by each district and are not guaranteed.</p>
+    <p><strong>Payment Policy:</strong> Cash-pay model for expedited access. Superbills provided for possible out-of-network reimbursement (not guaranteed).</p>
+    <p><strong>Refund Policy:</strong> If DSM-5 criteria for ADHD or Anxiety are not met, a $250 evaluation fee applies. Any remaining balance is refunded within ten (10) business days after processing by your bank or card provider.</p>
+    <p><strong>Privacy:</strong> HIPAA-compliant video platform. Review our <a href="/privacy.html" target="_blank">Privacy Policy</a> and <a href="/terms.html" target="_blank">Terms</a>.</p>
+    <p><strong>Disclaimer:</strong> Evaluations are diagnostic assessments only. Diagnostic conclusions are made solely if DSM-5 criteria are clinically met by the evaluating clinician. School acceptance and accommodations are determined by each district and not guaranteed.</p>
     <p><strong>Emergency Notice:</strong> For emergencies, call 911 or go to the nearest emergency room.</p>
   </section>
 
-  <!-- FOOTER -->
-  <footer role="contentinfo">
+  <footer>
     <p><strong>Zinny Ezete, APRN, PMHNP-BC</strong> • Dynamic Mental Health Services, LLC • Licensed in NY, NJ & CT</p>
     <p style="font-size:.82rem;color:#c9d2ff;margin-top:8px;">© 2025 Dynamic Mental Health Services, LLC • HIPAA Compliant • All Rights Reserved</p>
-    <p style="margin-top:8px;">
-      <a href="/privacy.html">Privacy</a> • <a href="/terms.html">Terms</a>
-    </p>
+    <p style="margin-top:8px;"><a href="/privacy.html">Privacy</a> • <a href="/terms.html">Terms</a></p>
   </footer>
-
-  <!-- Subtle reveal for highlight & cards -->
-  <script>
-    const observer = new IntersectionObserver((entries)=>entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); }),{threshold:0.3});
-    document.querySelectorAll('.highlight').forEach(el=>observer.observe(el));
-  </script>
 </body>
 </html>
